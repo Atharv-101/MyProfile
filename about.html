@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en" class="font-suisseintl-regular text-base font-normal leading-normal antialiased">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>About | Atharv Gangarde</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preload" href="fonts/SuisseIntl-Regular-WebS.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="assets/css/apped3e.css?id=2f1e72f7e628b70d73f3">
+    <meta name="keywords" content="">
+    <meta name="csrf-token" content="FzHOIZQAFnxjziRKrl62RePRfNg4QqZczMuegogI">
+        <meta property="og:title" content="About | Atharv Gangarde">
+    <meta property="og:type" content="website">
+          <meta property="og:url" content="about.html">
+        <link rel="apple-touch-icon" sizes="180x180" href="logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="logo.png">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-6435088-45"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-6435088-45');
+    </script>
+  </head>
+  <body>
+
+    <div id="app" class="text-lg md:text-2xl">
+      
+<about inline-template>
+  <div class="flex flex-wrap min-h-screen">
+    <site-header v-bind:show="show" route-name="about" inline-template>
+  <header class="w-full px-5 md:px-16 lg:px-20 py-8 md:py-12 lg:py-16 flex flex-wrap text-xl justify-between">
+    <div class="w-3/4 md:w-1/2">
+      <div class="text-base md:text-xl transition-opacity" v-bind:class="{'transition-delay-1500': showLogo, 'opacity-0': !showLogo}">
+        <a href="index.html" class="relative inline-flex z-10">
+          Atharv
+          <span class="text-grey ml-2 inline-flex relative w-20 md:w-32 overflow-hidden">
+            <div class="absolute left-0 top-0 vertical-rotate-1">Student</div>
+            <div class="absolute left-0 top-0 vertical-rotate-2">Freelancer</div>
+            <div class="absolute left-0 top-0 vertical-rotate-3">Programmer</div>
+          </span>
+        </a>
+      </div>
+    </div>
+    <div class="md:w-1/2 text-right">
+      <button class="text-base block md:hidden relative z-40 transition-opacity focus:outline-none" v-on:click="toggleMenu" v-bind:class="{'transition-delay-1500': show, 'opacity-0': !show}">
+        &mdash; {{ menuIsOpen ? 'Close' : 'Menu' }}
+      </button>
+      <nav class="text-xl leading-none hidden md:block">
+        <div class="transition-opacity mr-20 inline-flex" v-bind:class="{'transition-delay-1500': show, 'opacity-0': !show}">
+          <a href="about.html">
+            <span v-show="routeName == 'about'">&mdash;</span>
+            About
+          </a>
+        </div>
+        <div class="transition-opacity inline-flex" v-bind:class="{'transition-delay-1700': show, 'opacity-0': !show}">
+          <a href="works.html">
+            <span v-show="routeName == 'speaking'">&mdash;</span>
+            Works
+          </a>
+        </div>
+      </nav>
+      <nav v-bind:class="[menuIsOpen ? '' : 'invisible opacity-0']" class="text-3xl leading-tight fixed top-0 left-0 w-full h-full z-30 md:hidden flex flex-wrap bg-white px-8 pt-32 transition-opacity">
+        <div class="w-full">
+          <div>
+            <a href="index.html">
+              Home
+            </a>
+          </div>
+          <div>
+            <a href="about.html">
+              About
+            </a>
+          </div>
+          <div>
+            <a href="works.html">
+              Works
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+</site-header>
+    <div class="w-full">
+
+      <div class="flex flex-wrap">
+        <div class="w-1/4 lg:w-1/3 hidden md:block">
+          <nav-menu v-bind:menu="menu" v-bind:show="show" class="hidden lg:block"></nav-menu>
+        </div>
+        <div class="w-full md:w-3/4 lg:w-2/3">
+
+                      <observer
+              class="pt-12 pb-16 md:pt-16 md:pb-24 lg:pb-32 pl-5 pr-5 md:pl-0 md:pr-16 lg:pr-20 slide-in-enter-active"
+              id="bio"
+              v-on:in-view="inView"
+              v-bind:event-id="1"
+              v-bind:once="false"
+              v-bind:class="[show && menu[0].showSection ? 'transition-delay-200' : 'slide-in-enter']">
+
+                              <h2 class="text-3xl lg:text-5xl leading-tight inline-flex animation-reveal-text"
+    v-bind:class="{'animation-reveal-text-active animation-delay-200': show && menu[0].showSection }">
+    Regarding Me
+  </h2>
+
+  <div class="text-grey copy mt-12">
+    <p>I have been obsessed with Computers for as long as I can remember. So I have enrolled in computer engineering. I had a moment where I realized that My imagination made other people smile. It was a stunning.</p>
+<p>Being a creative in a Computer industry is a real privilege, and Now I'm enjoying. Running a successful projects gives me not only the opportunity to oversee the creation of truly beautiful work, it also allows me to prove that the companies who invest in me see a huge return on their investment.</p>
+<p>In recent years I have started Working with startups.</p>
+<p>As a Student it’s very important for me to keep practicing my skills. I still code and Read regularly and am constantly trying new techniques and mediums. I'll strive to the fullest.</p>
+<p>My <a href="works.html"><strong>Projects</strong></a> are tour de force made with just me & my laptop with some good space.</p>
+<p>If you'd like to find out more about me,  <a href="mailto:atharvgangarde15@gmail.com"> <strong> <i>Let's grab a Coffee🍵</i></strong> </a></p>
+  </div>
+                          </observer>
+          
+<observer class="pt-12 pb-16 md:pt-24 md:pb-24 lg:pb-32 pl-5 pr-5 md:pl-0 md:pr-16 lg:pr-20 slide-in-enter-active"
+              id="projects"
+              v-on:in-view="inView"
+              v-bind:event-id="2"
+              v-bind:once="false"
+              v-bind:class="[show && menu[1].showSection ? 'transition-delay-600' : 'slide-in-enter']">
+
+
+  <h2 class="text-3xl lg:text-5xl leading-tight inline-flex animation-reveal-text"
+    v-bind:class="{'animation-reveal-text-active animation-delay-200': show && menu[1].showSection }">
+    Projects
+  </h2>
+
+  <div class="text-grey copy mt-12">
+    <p>
+      Over the years I have created Projects for a wide range of clients, through connections.  <br>
+      I am an Engineering student so it makes it easy to work and learn cause it's my syllabus, ‘spare time’ is not something I have a lot of, but I continue to work for private clients as and when possible.
+    </p>
+    <p>If you have an idea you’d like, <a href="#contact" data-scroll="">get in touch</a>.
+    <br>
+    <br>
+      <strong>
+        <i>
+          <u>
+            <a href="works.html">Check it out!</a>
+          </u>
+        </i>
+      </strong>
+    </p>
+  </div>
+
+</observer>
+                  </div>
+
+                  
+      </div>
+              
+      
+      
+      <div class="flex flex-wrap">
+          <div class="w-1/3 hidden md:block"></div>
+          <div class="w-full md:w-2/3">
+
+            <observer
+              class="pt-12 pb-16 md:pt-24 md:pb-24 lg:pb-32 pl-5 pr-5 md:pl-0 md:pr-16 lg:pr-20 slide-in-enter-active"
+              id="skills"
+              v-on:in-view="inView"
+              v-bind:event-id="4"
+              v-bind:once="false"
+              v-bind:class="[show && menu[3].showSection ? 'transition-delay-600' : 'slide-in-enter']">
+
+                                  <h2 class="text-3xl lg:text-5xl leading-tight inline-flex animation-reveal-text"
+    v-bind:class="{'animation-reveal-text-active animation-delay-200': show && menu[3].showSection }">
+    Skills
+  </h2>
+
+  <div class="text-grey copy mt-12">
+      <p> <strong>Programming </strong><br>
+        I like to code things from my imagnation, and enjoy bringing them in real life.<br>
+        I Love to code in <i>Python, Java, Javascript, C, C++. </i> 
+    </p> 
+    
+    <p> <strong>UI/UX Design </strong><br>
+      I value simple content structure, clean design patterns, and thoughtful interactions. <br>
+      I enjoy designing UX-UI design, Web design, Mobile apps, Logos.
+    </p> 
+        
+    <p> <strong>Web Development </strong><br>
+      I like to code things from scratch, and enjoy bringing ideas in to real time.<br>
+      I enjoy designing UX-UI design, Web design, Mobile apps, Logos.
+    </p> 
+    
+  </div>
+                
+            </observer>
+          </div>
+        </div>
+      
+
+      
+        <div class="flex flex-wrap">
+          <div class="w-1/3 hidden md:block"></div>
+          <div class="w-full md:w-2/3">
+
+            <observer
+              class="pt-12 pb-16 md:pt-24 md:pb-24 lg:pb-32 pl-5 pr-5 md:pl-0 md:pr-16 lg:pr-20 slide-in-enter-active"
+              id="Clients"
+              v-on:in-view="inView"
+              v-bind:event-id="4"
+              v-bind:once="false"
+              v-bind:class="[show && menu[3].showSection ? 'transition-delay-600' : 'slide-in-enter']">
+
+    <h2 class="text-3xl lg:text-5xl leading-tight inline-flex animation-reveal-text"
+    v-bind:class="{'animation-reveal-text-active animation-delay-200': show && menu[3].showSection }">
+    Clients
+  </h2>
+<div class="clients-section">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="clients-container">
+          <ul class="clients clients-border">
+            <li>
+              <img class="img-responsive" alt="Clients" src="img/c1.png">
+            </li>
+            <li>
+              <img class="img-responsive" alt="Clients" src="img/c2.png">
+            </li>
+            <li>
+              <img class="img-responsive" alt="Clients" src="img/c3.png">
+            </li>
+          </ul>
+        </div>
+      </div>          
+    </div>
+  </div>
+</div>  
+  </observer>
+          </div>
+        </div>
+
+
+      <div class="flex flex-wrap bg-black">
+        <div class="w-1/3 hidden md:block"></div>
+        <div class="w-full md:w-2/3">
+
+          <observer
+            class="pt-16 pb-32 md:pt-24 md:pb-42 lg:pt-32 lg:pb-56 pl-5 pr-5 md:pl-0 md:pr-16 lg:pr-20 bg-black slide-in-enter-active"
+            id="contact"
+            v-on:in-view="inView"
+            v-bind:event-id="5"
+            v-bind:once="false"
+            v-bind:class="[show && menu[4].showSection ? 'transition-delay-600' : 'slide-in-enter']">
+            <a href="mailto:atharvgangarde15@gmail.com" class="hidden md:block text-3xl lg:text-5xl text-white">Email Me <svg class="ml-4 inline-flex fill-current" width="22" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M22 9l-9.203-9-1.422 1.375L18.156 8H0v2h18.156l-6.78 6.625L12.796 18 22 9z"/></svg></a>
+<a href="mailto:atharvgangarde15@gmail.com" class="block md:hidden text-3xl lg:text-5xl text-white">Email Me <svg class="ml-4 inline-flex fill-current" width="22" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M22 9l-9.203-9-1.422 1.375L18.156 8H0v2h18.156l-6.78 6.625L12.796 18 22 9z"/></svg></a>
+<div class="text-grey copy mt-8 md:mt-12">
+  <p>Please get in touch if you’d like me to speak at an event, or would like to commission an Projects , or if you just fancy a chat. </p>
+  <p>
+    <a class="text-white" target="_blank" rel="noopener" href="https://www.linkedin.com/in/atharvgangarde/">LinkedIn</a><br>
+    <a class="text-white" target="_blank" rel="noopener" href="https://www.instagram.com/atharv_.gangarde/">GitHub</a><br>
+    <a class="text-white" target="_blank" rel="noopener" href="https://www.instagram.com/atharv_.gangarde/">Instagram</a><br>
+  </p>
+</div>
+          </observer>
+        </div>
+      </div>
+    </div>
+    <site-footer v-bind:show="show" v-bind:black="true" inline-template>
+  <footer class="w-full lg:self-end px-5 md:px-16 lg:px-20 pb-16 lg:pt-16 lg:pb-16 text-base md:text-xl" v-bind:class="{'bg-black': black}">
+    <div class="flex flex-wrap">
+      <div class="w-full md:w-1/2">
+        <div class="transition-opacity" v-bind:class="{'transition-delay-1900': show, 'opacity-0': !show}">
+          <a class="text-grey" href="index.html">
+            By ME 😎
+          </a>
+        </div>
+      </div>
+      <div class="w-full md:w-1/2">
+        <div class="transition-opacity md:text-right" v-bind:class="{'transition-delay-1900': show, 'opacity-0': !show}">
+          <a class="text-grey" href="mailto:atharvgangarde15@gmail.com">
+            atharvgangarde15@gmail.com
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</site-footer>
+  </div>
+</about>
+
+
+              <transition name="page-slide" v-on:after-enter="afterEnter" v-on:after-leave="afterLeave">
+          <div v-show="state.pageLoadingAnimation" class="fixed bottom-0 left-0 w-full h-full bg-black z-50"></div>
+        </transition>
+      
+          </div>
+
+    
+    <script>window.showSplashScreen = false;</script>
+    <script src="assets/js/app2b87.js?id=ef4c996f4f4ca84c790c"></script>
+  </body>
+</html>
